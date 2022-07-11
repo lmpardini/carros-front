@@ -8,9 +8,7 @@ import {Router} from "@angular/router";
 })
 export class HeaderComponent implements OnInit {
 
-  constructor(
-    private router: Router
-  ) { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
@@ -22,5 +20,4 @@ export class HeaderComponent implements OnInit {
   irParaHome(){
     this.router.navigate(['home'])
   }
-
 }

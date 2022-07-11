@@ -20,7 +20,6 @@ export class EditarVeiculoDialogComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-
   }
 
   editarVeiculo = this.fb.group({
@@ -67,5 +66,4 @@ export class EditarVeiculoDialogComponent implements OnInit {
           this.fecharModal();
         })}})
   }
-
 }

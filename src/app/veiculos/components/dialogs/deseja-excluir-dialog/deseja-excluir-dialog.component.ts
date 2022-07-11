@@ -11,10 +11,10 @@ export class DesejaExcluirDialogComponent implements OnInit {
   excluir: boolean = false;
 
   constructor(public dialog: MatDialog,
-              public dialogRef: MatDialogRef<DesejaExcluirDialogComponent>) {}
+              public dialogRef: MatDialogRef<DesejaExcluirDialogComponent>
+  ) {}
 
   ngOnInit(): void {
-
   }
 
   excluirItem(){
@@ -24,5 +24,4 @@ export class DesejaExcluirDialogComponent implements OnInit {
   fecharDialog(){
     this.dialogRef.close(this.excluir);
   }
-
 }

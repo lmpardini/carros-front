@@ -1,13 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import {MatDialogRef} from "@angular/material/dialog";
 import {
-  AbstractControl,
   FormBuilder,
-  ValidationErrors,
-  Validators,
-  ɵElement,
-  ɵFormGroupValue,
-  ɵTypedOrUntyped
+  Validators
 } from "@angular/forms";
 import {VeiculoService} from "../../../../core/service/veiculo.service";
 import {Veiculo} from "../../../../core/interface/veiculo";
@@ -37,7 +32,6 @@ export class CriarCarroDialogComponent implements OnInit {
     public dialogRef: MatDialogRef<CriarCarroDialogComponent>,
     private fb: FormBuilder,
     private service: VeiculoService,
-
   ) { }
 
   ngOnInit(): void {
@@ -56,7 +50,6 @@ export class CriarCarroDialogComponent implements OnInit {
       }else {
         this.service.showMessage(res.data)
       }
-
     })
   }
 

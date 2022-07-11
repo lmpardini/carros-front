@@ -1,8 +1,6 @@
 .container{
-
   display: flex;
   justify-content: center;
-
 }
 
 .modal{
@@ -47,7 +45,6 @@
   justify-content: space-between;
 }
 
-
 @media screen and (max-width: 768px) {
   .modal {
     width: auto;
@@ -66,10 +63,10 @@
   .modal {
     width: auto;
     height: 380px;
-    .seletor{
-      margin-bottom: 15px;
-      margin-top: 3px!important;
     }
+  .seletor{
+    margin-bottom: 15px;
+    margin-top: 3px!important;
   }
 }
 

@@ -17,6 +17,7 @@ import { DesejaEditarDialogComponent } from './components/dialogs/deseja-editar-
 import { DesejaExcluirDialogComponent } from './components/dialogs/deseja-excluir-dialog/deseja-excluir-dialog.component';
 import {AppModule} from "../app.module";
 import {VendidoPipe} from "../pipes/vendido.pipe";
+import {MatCardModule} from "@angular/material/card";
 
 
 @NgModule({
@@ -37,6 +38,7 @@ import {VendidoPipe} from "../pipes/vendido.pipe";
     ReactiveFormsModule,
     MatDialogModule,
     MatSlideToggleModule,
+    MatCardModule,
   ], providers: [HttpClient]
 })
 export class VeiculosModule { }

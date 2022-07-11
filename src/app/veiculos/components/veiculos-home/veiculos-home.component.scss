@@ -24,14 +24,11 @@
 }
 .item-menu:hover{
   background-color: #efefef;
-
 }
-
 .icon-menu{
   color: #d9d9d9;
   margin-right: 10px;
 }
-
 .container{
   display: flex;
   justify-content: center;
@@ -106,6 +103,9 @@ mat-header-cell, mat-cell {
   }
   .modal {
     width: auto;
+  }
+  .input-pesquisa {
+    width: 160px!important;
   }
 }
 

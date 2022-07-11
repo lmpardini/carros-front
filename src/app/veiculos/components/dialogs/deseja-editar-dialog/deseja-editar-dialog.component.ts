@@ -14,7 +14,6 @@ export class DesejaEditarDialogComponent implements OnInit {
               public dialogRef: MatDialogRef<DesejaEditarDialogComponent>) {}
 
   ngOnInit(): void {
-
   }
 
   editarItem(){
@@ -24,5 +23,4 @@ export class DesejaEditarDialogComponent implements OnInit {
   fecharDialog(){
     this.dialogRef.close(this.editar);
   }
-
 }

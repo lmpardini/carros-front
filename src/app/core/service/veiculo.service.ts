@@ -29,13 +29,11 @@ export class VeiculoService {
   create(veiculo: Veiculo): Observable<any>{
     const url = `${this.urlVeiculo}veiculos/`
     return this.http.post<Veiculo>(url, veiculo)
-
   }
 
   read(): Observable<any>{
     const url = `${this.urlVeiculo}veiculos/`
     return this.http.get<Veiculo[]>(url)
-
   }
 
   pesquisarPorId(id:string): Observable<any>{
