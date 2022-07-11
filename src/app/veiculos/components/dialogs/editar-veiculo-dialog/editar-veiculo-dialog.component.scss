@@ -1,0 +1,75 @@
+.container{
+
+  display: flex;
+  justify-content: center;
+
+}
+
+.modal{
+  height: 280px;
+  position: initial;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.cadastro-veiculos-card {
+  min-width: 350px;
+  margin: 20px auto;
+}
+
+.mat-radio-button {
+  display: block;
+  margin: 5px 0;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.col {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.col:last-child {
+  margin-right: 0;
+}
+
+.button{
+  display: flex;
+  justify-content: center;
+}
+.button-dialog{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+@media screen and (max-width: 768px) {
+  .modal {
+    width: auto;
+    height: 270px;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .modal {
+    width: auto;
+    height: 340px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .modal {
+    width: auto;
+    height: 380px;
+    .seletor{
+      margin-bottom: 15px;
+      margin-top: 3px!important;
+    }
+  }
+}
+

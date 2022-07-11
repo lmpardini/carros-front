@@ -1,0 +1,62 @@
+
+<h1 mat-dialog-title>Editar Veículo</h1>
+<div mat-dialog-content class="modal">
+  <form [formGroup]="editarVeiculo" novalidate>
+    <div class="row">
+      <div class="col-2">
+        <mat-form-field style="width: 50px">
+          <input matInput placeholder="ID" formControlName="id" readonly>
+        </mat-form-field>
+      </div>
+      <div class="col">
+        <mat-form-field class="full-width">
+          <input matInput placeholder="Insira a marca do Veículo" formControlName="marca">
+          <mat-error *ngIf="editarVeiculo.controls['marca'].hasError('required')">
+            Marca do carro é <strong>obrigatório</strong>
+          </mat-error>
+        </mat-form-field>
+      </div>
+
+      <div class="col">
+        <mat-form-field class="full-width">
+          <input matInput placeholder="Insira o modelo do Veículo" formControlName="veiculo"                 >
+          <mat-error *ngIf="editarVeiculo.controls['veiculo'].hasError('required')">
+            Modelo do carro é <strong>obrigatório</strong>
+          </mat-error>
+        </mat-form-field>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <mat-form-field class="full-width">
+          <input type="number" matInput placeholder="Insira o Ano do Veículo" formControlName="ano">
+          <mat-error *ngIf="editarVeiculo.controls['ano'].hasError('required')">
+            Ano do veículo é <strong>obrigatório</strong>
+          </mat-error>
+        </mat-form-field>
+      </div>
+      <div class="col seletor" style="margin-top: 10px">
+        <mat-slide-toggle formControlName="vendido">Carro vendido</mat-slide-toggle>
+
+      </div>
+
+
+
+      </div>
+
+    <div class="row">
+      <mat-form-field class="full-width">
+            <textarea  rows="5" matNativeControl placeholder="Insira aqui uma observação"
+                       formControlName="descricao"></textarea>
+      </mat-form-field>
+    </div>
+
+
+  </form>
+</div>
+<div mat-dialog-actions class="button-dialog">
+  <button mat-button (click)="fecharModal()">Cancelar</button>
+  <button mat-raised-button color="warn" (click)="excluirVeiculo(editarVeiculo.value.id)">Excluir</button>
+  <button mat-raised-button color="primary" type="submit" (click)="editVeiculo(editarVeiculo.value.id)">Editar</button>
+
+</div>

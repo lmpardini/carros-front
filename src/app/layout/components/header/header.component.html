@@ -1,0 +1,21 @@
+<mat-toolbar color="primary">
+  <mat-icon (click)="drawer.toggle()">menu</mat-icon>
+
+</mat-toolbar>
+
+<mat-drawer-container class="area-total">
+  <mat-drawer class="area-menu" #drawer>
+    <div class="item-menu" (click)="irParaHome();drawer.toggle()">
+      <mat-icon class="icon-menu" >home </mat-icon>  Inicio
+    </div>
+    <div class="item-menu">
+      <mat-icon class="icon-menu" (click)="irParaVeiculos();drawer.toggle()">drive_eta</mat-icon>  Veículos
+    </div>
+  </mat-drawer>
+  <mat-drawer-content>
+
+    <router-outlet></router-outlet>
+
+  </mat-drawer-content>
+</mat-drawer-container>
+
